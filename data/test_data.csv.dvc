@@ -1,5 +1,4 @@
 outs:
-- md5: fde930594d853761021b538ad3572c62
-  size: 46886
-  isexec: true
+- md5: 7e507e1707713843e03364683fefe694
+  size: 45092
   path: test_data.csv
