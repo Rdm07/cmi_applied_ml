@@ -1,0 +1,15 @@
+artifact_uri: ../tracking/MLFlow_Logs/mlruns/217659261940286806/bd8a5e76b3744d7fb949130384485852/artifacts
+end_time: 1677420755915
+entry_point_name: ''
+experiment_id: '217659261940286806'
+lifecycle_stage: active
+run_id: bd8a5e76b3744d7fb949130384485852
+run_name: capable-mare-904
+run_uuid: bd8a5e76b3744d7fb949130384485852
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677420755903
+status: 3
+tags: []
+user_id: rohan

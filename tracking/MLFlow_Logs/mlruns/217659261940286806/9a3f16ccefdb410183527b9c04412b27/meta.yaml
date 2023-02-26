@@ -1,0 +1,15 @@
+artifact_uri: ../tracking/MLFlow_Logs/mlruns/217659261940286806/9a3f16ccefdb410183527b9c04412b27/artifacts
+end_time: 1677420756378
+entry_point_name: ''
+experiment_id: '217659261940286806'
+lifecycle_stage: active
+run_id: 9a3f16ccefdb410183527b9c04412b27
+run_name: hilarious-fly-911
+run_uuid: 9a3f16ccefdb410183527b9c04412b27
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677420756294
+status: 3
+tags: []
+user_id: rohan

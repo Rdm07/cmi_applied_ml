@@ -1,0 +1,15 @@
+artifact_uri: ../tracking/MLFlow_Logs/mlruns/217659261940286806/0e9a9b0f13024c97b08cfd42ce5f84da/artifacts
+end_time: 1677420763424
+entry_point_name: ''
+experiment_id: '217659261940286806'
+lifecycle_stage: active
+run_id: 0e9a9b0f13024c97b08cfd42ce5f84da
+run_name: chill-moose-526
+run_uuid: 0e9a9b0f13024c97b08cfd42ce5f84da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677420762034
+status: 3
+tags: []
+user_id: rohan

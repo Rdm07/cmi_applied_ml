@@ -1,0 +1,15 @@
+artifact_uri: ../tracking/MLFlow_Logs/mlruns/217659261940286806/2ecd246ddf324d638ee74df878b4a17d/artifacts
+end_time: 1677420766912
+entry_point_name: ''
+experiment_id: '217659261940286806'
+lifecycle_stage: active
+run_id: 2ecd246ddf324d638ee74df878b4a17d
+run_name: bright-ape-343
+run_uuid: 2ecd246ddf324d638ee74df878b4a17d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677420765548
+status: 3
+tags: []
+user_id: rohan

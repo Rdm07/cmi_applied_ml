@@ -1,0 +1,15 @@
+artifact_uri: ../tracking/MLFlow_Logs/mlruns/217659261940286806/ca6d6f1f5f9b4890a591d278c89dc1f1/artifacts
+end_time: 1677420773608
+entry_point_name: ''
+experiment_id: '217659261940286806'
+lifecycle_stage: active
+run_id: ca6d6f1f5f9b4890a591d278c89dc1f1
+run_name: worried-zebra-993
+run_uuid: ca6d6f1f5f9b4890a591d278c89dc1f1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677420769307
+status: 3
+tags: []
+user_id: rohan

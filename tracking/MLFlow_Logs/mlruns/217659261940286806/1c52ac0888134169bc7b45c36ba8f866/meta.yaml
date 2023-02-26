@@ -1,0 +1,15 @@
+artifact_uri: ../tracking/MLFlow_Logs/mlruns/217659261940286806/1c52ac0888134169bc7b45c36ba8f866/artifacts
+end_time: 1677420768149
+entry_point_name: ''
+experiment_id: '217659261940286806'
+lifecycle_stage: active
+run_id: 1c52ac0888134169bc7b45c36ba8f866
+run_name: overjoyed-rat-869
+run_uuid: 1c52ac0888134169bc7b45c36ba8f866
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677420766914
+status: 3
+tags: []
+user_id: rohan
