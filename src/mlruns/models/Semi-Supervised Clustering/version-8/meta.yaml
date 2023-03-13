@@ -1,0 +1,12 @@
+creation_timestamp: 1678736355999
+current_stage: None
+description: null
+last_updated_timestamp: 1678736355999
+name: Semi-Supervised Clustering
+run_id: 9c0eecfef2bb499ab67824c9c2bc9e23
+run_link: null
+source: file:///mnt/vol_d/VSCode_Workspace/cmi_applied_ml/src/mlruns/0/9c0eecfef2bb499ab67824c9c2bc9e23/artifacts/sklearn-model
+status: READY
+status_message: null
+user_id: null
+version: 8

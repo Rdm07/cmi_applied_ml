@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/vol_d/VSCode_Workspace/cmi_applied_ml/src/mlruns/0/d1a719cad5b64952919b93dbb88df470/artifacts
+end_time: 1678736345403
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d1a719cad5b64952919b93dbb88df470
+run_name: 'Model : Semi-Supervised Clustering, C : 30'
+run_uuid: d1a719cad5b64952919b93dbb88df470
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678736339492
+status: 3
+tags: []
+user_id: rohan
