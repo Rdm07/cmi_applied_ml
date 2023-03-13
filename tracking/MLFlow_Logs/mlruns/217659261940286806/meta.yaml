@@ -1,6 +1,0 @@
-artifact_location: ../tracking/MLFlow_Logs/mlruns/217659261940286806
-creation_time: 1677420755636
-experiment_id: '217659261940286806'
-last_update_time: 1677420755636
-lifecycle_stage: active
-name: SMS Spam Classification Model Evaluation
