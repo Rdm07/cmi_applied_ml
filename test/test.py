@@ -1,5 +1,5 @@
-import os, sys, random
-import pickle
+import os, sys, random, time
+import pickle, requests
 import csv, sklearn, matplotlib
 import numpy as np
 
@@ -61,10 +61,29 @@ def test_pred_thres_one(text=obvious_ham, threshold=threshold, model=lr_model) -
 def test_obvious_spam(text=obvious_spam, threshold=threshold, model=lr_model) -> None:
     label, prop = score(text, model, threshold)
 
-    assert label == True
+    assert label == True, "Prob: {}".format(prop)
 
 # Check Prediction Value for Threshold = 1 Test
 def test_obvious_ham(text=obvious_ham, threshold=threshold, model=lr_model) -> None:
     label, prop = score(text, model, threshold)
 
     assert label == False
+
+def test_flask():
+        # Launch the Flask app using os.system
+        os.system('python app.py &')
+
+        # Wait for the app to start up
+        time.sleep(1)
+
+        # Make a request to the endpoint
+        response = requests.get('http://127.0.0.1:5000/')
+        print(response.status_code)
+
+        # Assert that the response is what we expect
+        assert response.status_code == 200
+
+        assert type(response.text) == str
+
+        # Shut down the Flask app using os.system
+        os.system('kill $(lsof -t -i:5000)')
