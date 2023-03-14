@@ -1,0 +1,12 @@
+creation_timestamp: 1678803607630
+current_stage: None
+description: null
+last_updated_timestamp: 1678803607630
+name: Logistic Regression
+run_id: 347df09ea85448c1a2229dc5ba244d45
+run_link: null
+source: file:///mnt/vol_d/VSCode_Workspace/cmi_applied_ml/src/mlruns/0/347df09ea85448c1a2229dc5ba244d45/artifacts/sklearn-model
+status: READY
+status_message: null
+user_id: null
+version: 5

@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/vol_d/VSCode_Workspace/cmi_applied_ml/src/mlruns/0/b88f230db73840169c2dabd88d7ed01a/artifacts
+end_time: 1678803589836
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b88f230db73840169c2dabd88d7ed01a
+run_name: 'Model : Logistic Regression, C : 0.1'
+run_uuid: b88f230db73840169c2dabd88d7ed01a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678803584872
+status: 3
+tags: []
+user_id: rohan

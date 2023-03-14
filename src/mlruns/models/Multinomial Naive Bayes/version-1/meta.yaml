@@ -1,0 +1,12 @@
+creation_timestamp: 1678803545408
+current_stage: None
+description: null
+last_updated_timestamp: 1678803545408
+name: Multinomial Naive Bayes
+run_id: 0408d67bdc064e36ac44ce021df495ed
+run_link: null
+source: file:///mnt/vol_d/VSCode_Workspace/cmi_applied_ml/src/mlruns/0/0408d67bdc064e36ac44ce021df495ed/artifacts/sklearn-model
+status: READY
+status_message: null
+user_id: null
+version: 1

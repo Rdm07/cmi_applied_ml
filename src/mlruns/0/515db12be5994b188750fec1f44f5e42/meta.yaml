@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/vol_d/VSCode_Workspace/cmi_applied_ml/src/mlruns/0/515db12be5994b188750fec1f44f5e42/artifacts
+end_time: 1678803575869
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 515db12be5994b188750fec1f44f5e42
+run_name: 'Model : Multinomial Naive Bayes, Alpha : 1.55'
+run_uuid: 515db12be5994b188750fec1f44f5e42
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678803571444
+status: 3
+tags: []
+user_id: rohan
