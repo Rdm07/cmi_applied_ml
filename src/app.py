@@ -4,9 +4,13 @@ import csv, sklearn, matplotlib
 import numpy as np
 
 from flask import Flask, request, render_template, url_for, redirect
-from score import *
 
-app = Flask(__name__, template_folder = './template')
+# Local Imports
+sys.path.insert(1, os.path.join(os.path.dirname(__file__), "../"))
+
+from test.score import score
+
+app = Flask(__name__, template_folder = '../test/template')
 
 # Importing Model
 file_wd = os.path.dirname(__file__)
