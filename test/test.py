@@ -2,6 +2,11 @@ import os, sys, random, time
 import pickle, requests
 import csv, sklearn, matplotlib
 import numpy as np
+import warnings
+warnings.simplefilter("ignore", category=UserWarning) 
+
+# Local Imports
+sys.path.insert(1, os.path.join(os.path.dirname(__file__), "../test"))
 
 from score import *
 
@@ -71,7 +76,7 @@ def test_obvious_ham(text=obvious_ham, threshold=threshold, model=lr_model) -> N
 
 def test_flask():
         # Launch the Flask app using os.system
-        os.system('python app.py &')
+        os.system('python src/app.py &')
 
         # Wait for the app to start up
         time.sleep(1)
