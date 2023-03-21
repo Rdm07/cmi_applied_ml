@@ -1,6 +1,5 @@
 import os, sys, random
 import pickle
-import csv, sklearn, matplotlib
 import numpy as np
 
 from flask import Flask, request, render_template, url_for, redirect

@@ -1,6 +1,6 @@
 import os, sys, random
 import pickle
-import csv, nltk, sklearn, matplotlib
+import nltk
 import re, contractions
 
 from collections import Counter
