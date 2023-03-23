@@ -164,3 +164,4 @@ cython_debug/
 
 # PyCache
 **/__pycache__/
+.pyc
