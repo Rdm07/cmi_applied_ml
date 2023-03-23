@@ -1,5 +1,5 @@
 import os, sys, random
-import pickle
+import pickle, json
 
 from flask import Flask, request, render_template
 
@@ -20,18 +20,19 @@ threshold=0.5
 
 @app.route('/') 
 def home():
-    return render_template('spam.html')
+    return render_template('post.html')
 
-@app.route('/spam', methods=['POST'])
+@app.route('/score', methods=['POST'])
 def spam():
     sent = request.form['sent']
     label, prop = score(sent, lr_model, threshold)
     prop = round(prop, 3)
     lbl = "Spam" if label == 1 else "Not spam"
-    ans1 = f"""The input text: {sent}"""
-    ans2 = f"""The prediction: {lbl}""" 
-    ans3 = f"""The propensity score: {prop}"""
-    return render_template('result.html', ans1 = ans1, ans2 = ans2, ans3 = ans3)
+
+    dict1 = {"Sentence": sent, "Prediction": lbl, "Propensity": prop}
+    json_object = json.dumps(dict1, indent = 4) 
+
+    return json_object
 
 if __name__ == '__main__': 
     app.run(host="0.0.0.0", port=5000, debug=True)
