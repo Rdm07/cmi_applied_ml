@@ -1,11 +1,13 @@
 import os, sys, random
 import pickle
 import nltk
-import re, contractions
+import re, contractions, warnings
 
 from collections import Counter
 from nltk.tokenize import RegexpTokenizer, word_tokenize, sent_tokenize
 from nltk.stem import WordNetLemmatizer
+
+warnings.simplefilter("ignore", UserWarning)
 
 # Importing Count Vectorizer and Word Vector
 file_wd = os.path.dirname(__file__)
