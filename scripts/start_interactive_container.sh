@@ -1,0 +1,1 @@
+docker exec -it spam-flask-app /bin/bash
