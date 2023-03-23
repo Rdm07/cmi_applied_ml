@@ -74,38 +74,82 @@ def test_obvious_ham(text=obvious_ham, threshold=threshold, model=lr_model) -> N
     assert label == False
 
 def test_flask():
-        # Launch the Flask app using os.system
-        os.system('python src/app.py &')
+    # Launch the Flask app using os.system
+    os.system('python src/app.py &')
 
-        # Wait for the app to start up
-        time.sleep(1)
+    # Wait for the app to start up
+    time.sleep(1)
 
-        # Make a get request to the endpoint
-        response = requests.get('http://127.0.0.1:5000/')
-        print(response.status_code)
+    # Make a get request to the endpoint
+    response = requests.get('http://127.0.0.1:5000/')
+    print(response.status_code)
 
-        # Assert that the response is what we expect
-        assert response.status_code == 200
+    # Assert that the response is what we expect
+    assert response.status_code == 200
 
-        assert type(response.text) == str
+    assert type(response.text) == str
 
-        # Make a post request to the endpoint score
-        json_response = requests.post('http://127.0.0.1:5000/score', {"sent": obvious_ham})
+    # Make a post request to the endpoint score
+    json_response = requests.post('http://127.0.0.1:5000/score', {"sent": obvious_ham})
 
-        # Assert that the response is what we expect
-        assert json_response.status_code == 200
+    # Assert that the response is what we expect
+    assert json_response.status_code == 200
 
-        assert type(json_response.text) == str
+    assert type(json_response.text) == str
 
-        # Assert it is a json as we intended
-        load_j = json.loads(json_response.text)
+    # Assert it is a json as we intended
+    load_j = json.loads(json_response.text)
 
-        assert type(load_j["Sentence"]) == str
+    assert type(load_j["Sentence"]) == str
 
-        assert load_j["Prediction"] == "Spam" or load_j["Prediction"] == "Not Spam"
+    assert load_j["Prediction"] == "Spam" or load_j["Prediction"] == "Not Spam"
 
-        prop1 = float(load_j["Propensity"])
-        assert prop1 >= 0 and prop1 <= 1
+    prop1 = float(load_j["Propensity"])
+    assert prop1 >= 0 and prop1 <= 1
 
-        # Shut down the Flask app using os.system
-        os.system('kill $(lsof -t -i:5000)')
+    # Shut down the Flask app using os.system
+    os.system('kill $(lsof -t -i:5000)')
+
+def test_docker():
+    # Build Docker Image
+    os.system('bash scripts/build_docker_image.sh')
+
+    # Run Docker Container (and the app with it)
+    os.system('bash scripts/run_container.sh')
+
+    # Run Test Flask again
+    # Make a get request to the endpoint
+    response = requests.get('http://127.0.0.1:5000/')
+    print(response.status_code)
+
+    # Assert that the response is what we expect
+    assert response.status_code == 200
+
+    assert type(response.text) == str
+
+    # Make a post request to the endpoint score
+    json_response = requests.post('http://127.0.0.1:5000/score', {"sent": obvious_ham})
+
+    # Assert that the response is what we expect
+    assert json_response.status_code == 200
+
+    assert type(json_response.text) == str
+
+    # Assert it is a json as we intended
+    load_j = json.loads(json_response.text)
+
+    assert type(load_j["Sentence"]) == str
+
+    assert load_j["Prediction"] == "Spam" or load_j["Prediction"] == "Not Spam"
+
+    prop1 = float(load_j["Propensity"])
+    assert prop1 >= 0 and prop1 <= 1
+
+    # Shut down the Flask app using os.system
+    os.system('kill $(lsof -t -i:5000)')
+
+    # Stop and Remove Docker Container
+    os.system('bash scripts/stop_rm_container.sh')
+
+    # Remove Docker Image
+    os.system('bash scripts/rm_image.sh')
