@@ -35,4 +35,4 @@ def spam():
     return render_template('result.html', ans1 = ans1, ans2 = ans2, ans3 = ans3)
 
 if __name__ == '__main__': 
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=80, debug=True)
