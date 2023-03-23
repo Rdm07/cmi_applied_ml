@@ -1,13 +1,12 @@
 import os, sys, random
 import pickle
-import numpy as np
 
-from flask import Flask, request, render_template, url_for, redirect
+from flask import Flask, request, render_template
 
 # Local Imports
-sys.path.insert(1, os.path.join(os.path.dirname(__file__), "../"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "../test"))
 
-from test.score import score
+from score import score
 
 app = Flask(__name__, template_folder = '../test/template')
 
@@ -35,4 +34,4 @@ def spam():
     return render_template('result.html', ans1 = ans1, ans2 = ans2, ans3 = ans3)
 
 if __name__ == '__main__': 
-    app.run(host="0.0.0.0", port=80, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
