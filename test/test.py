@@ -117,6 +117,7 @@ def test_docker():
     # Run Docker Container (and the app with it)
     os.system('bash scripts/run_container.sh')
 
+    time.sleep(10)
     # Run Test Flask again
     # Make a get request to the endpoint
     response = requests.get('http://127.0.0.1:5000/')
@@ -148,8 +149,8 @@ def test_docker():
     # Shut down the Flask app using os.system
     os.system('kill $(lsof -t -i:5000)')
 
-    # Stop and Remove Docker Container
-    os.system('bash scripts/stop_rm_container.sh')
+    # # Stop and Remove Docker Container
+    # os.system('bash scripts/stop_rm_container.sh')
 
-    # Remove Docker Image
-    os.system('bash scripts/rm_image.sh')
+    # # Remove Docker Image
+    # os.system('bash scripts/rm_image.sh')
