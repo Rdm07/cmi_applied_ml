@@ -27,7 +27,7 @@ def spam():
     sent = request.form['sent']
     label, prop = score(sent, lr_model, threshold)
     prop = round(prop, 3)
-    lbl = "Spam" if label == 1 else "Not spam"
+    lbl = "Spam" if label == 1 else "Not Spam"
 
     dict1 = {"Sentence": sent, "Prediction": lbl, "Propensity": prop}
     json_object = json.dumps(dict1, indent = 4) 
