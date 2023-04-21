@@ -1,0 +1,5 @@
+outs:
+- md5: 2be0db186d0ff9f87089b7cf7d22c028.dir
+  size: 45105677
+  nfiles: 1539
+  path: cnn_data
