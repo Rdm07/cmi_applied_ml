@@ -1,0 +1,5 @@
+outs:
+- md5: 58f282e758cacdb577ec7e5113c33252.dir
+  size: 150341559
+  nfiles: 3
+  path: text_data
