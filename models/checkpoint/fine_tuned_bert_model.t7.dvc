@@ -1,0 +1,5 @@
+outs:
+- md5: ab03c65b189a54bbb5b9f647c265b338
+  size: 438065889
+  isexec: true
+  path: fine_tuned_bert_model.t7
